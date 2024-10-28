@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OTPActivity">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/logo_saktoko_flash"
+            android:src="@drawable/ic_saktoko" />
+        <TextView
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_marginEnd="7dp"
+            android:textColor="@color/abu_abu"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/gothic_bold_italic"
+            android:textAlignment="textEnd"
+            android:text="@string/verifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/keterangan"
+            android:text="@string/kami_telah_mengirim"
+
+            android:textAlignment="center"
+            android:textColor="@color/abu_abu_dark"
+            android:fontFamily="@font/gothic_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/gothic_bold"
+            android:id="@+id/tvNoTelp"
+            android:text="@string/nol"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:text="@string/masukkan_kode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abu_abu_dark"
+            android:fontFamily="@font/gothic_regular"/>
+
+        <EditText
+            android:id="@+id/kode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/gothic_bold"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            tools:ignore="LabelFor" />
+
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnVerifikasi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_putih_border_disabled"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" >
+
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/gothic_bold"
+                    android:text="@string/verifikasi"
+                    android:textAllCaps="true"
+                    android:textColor="@color/abu_abu" />
+            </RelativeLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnKirimUlang"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_putih_border"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" >
+
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/gothic_bold"
+                    android:text="@string/kirim_ulang"
+                    android:textAllCaps="true"
+                    android:textColor="@color/abu_abu" />
+            </RelativeLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/hitung"
+            android:fontFamily="@font/gothic_bold"
+            android:textColor="@color/abu_abu"
+            android:text="@string/nol"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/progressbar_animasi"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

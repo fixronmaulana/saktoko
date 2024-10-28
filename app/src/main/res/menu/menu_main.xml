@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tripointeknologi.saktoko.Activity.MainActivity">
+    <item
+        android:id="@+id/dataBeranda"
+        android:icon="@drawable/beranda_icon"
+        android:title="@string/beranda"
+        />
+    <item
+        android:id="@+id/dataResep"
+        android:icon="@drawable/chef_icon"
+        android:title="@string/aneka_resep"
+        />
+    <item
+        android:id="@+id/dataProduk"
+        android:icon="@drawable/produk_icon"
+        android:title="@string/produk"
+        />
+
+    <item
+        android:id="@+id/dataPesanan"
+        android:icon="@drawable/pesanan_icon"
+        android:title="@string/pesanan"
+        />
+    <item
+        android:id="@+id/dataAkun"
+        android:icon="@drawable/akun_saya_icon"
+        android:title="@string/akun_saya"
+        />
+</menu>

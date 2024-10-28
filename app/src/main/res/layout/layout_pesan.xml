@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:background="@drawable/bg_merah_radius"
+    android:id="@+id/parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/ic_no_connection"
+        android:id="@+id/icon"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:contentDescription="@string/icon"/>
+
+    <TextView
+        android:text="@string/judul_error_jaringan"
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/oswald_medium"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:text="@string/error_jaringan"
+        android:id="@+id/pesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/poppinsregular"
+        android:letterSpacing="0.05"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_11ssp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:background="@drawable/bg_btn_putih"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/btnClose"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:mrl_rippleColor="#FFFFFF"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingEnd="@dimen/_25sdp"
+        app:mrl_rippleAlpha="0.3"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleDuration="300"
+        app:mrl_rippleRoundedCorners="@dimen/_25sdp">
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/tvButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/close"
+            android:textColor="#2B2B2B"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

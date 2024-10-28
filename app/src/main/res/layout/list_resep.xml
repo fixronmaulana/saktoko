@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="1dp">
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/btnResep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleColor="@color/white"
+        app:mrl_rippleDelayClick="false"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imFoto"
+                    app:riv_corner_radius="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/banner"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_no_foto" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tvNamaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5ssp"
+                android:background="@color/putih_transparan_menu"
+                android:fontFamily="@font/gothic_bold"
+                android:text="@string/kategori"
+                android:textAlignment="center"
+                android:textColor="@color/abu_abu_dark"
+                android:textSize="@dimen/_11ssp" />
+        </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</androidx.cardview.widget.CardView>

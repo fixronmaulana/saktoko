@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "170129057876",
+    "firebase_url": "https://belilagi-86f27-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "belilagi-86f27",
+    "storage_bucket": "belilagi-86f27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170129057876:android:49f4fc8fec95107ee625c1",
+        "android_client_info": {
+          "package_name": "com.tripointeknologi.saktoko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170129057876-e3ila6hcb9itasvgoietgn0pl6n1njen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tripointeknologi.saktoko",
+            "certificate_hash": "f03b2afcf5693aa01bfd12625a7762d1f9c16505"
+          }
+        },
+        {
+          "client_id": "170129057876-ilfost0f47hg01c7uesmktp2d6gqn5kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtr19VAN_SZrjhPQtD1DrxfrJ0JzEYNsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170129057876-ilfost0f47hg01c7uesmktp2d6gqn5kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

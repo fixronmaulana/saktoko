@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tripointeknologi.saktoko.Fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/produkFragment"
+        android:name="com.tripointeknologi.saktoko.Fragment.ProdukFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_produk" />
+    <fragment
+        android:id="@+id/pesananFragment"
+        android:name="com.tripointeknologi.saktoko.Fragment.PesananFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_pesanan" />
+    <fragment
+        android:id="@+id/akunFragment"
+        android:name="com.tripointeknologi.saktoko.Fragment.AkunFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_akun" />
+</navigation>

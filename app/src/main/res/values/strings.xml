@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Saktoko</string>
+    <!--    <string name="action_settings">Settings</string>-->
+    <!--    &lt;!&ndash; Strings used for fragments for navigation &ndash;&gt;-->
+    <!--    <string name="first_fragment_label">First Fragment</string>-->
+    <!--    <string name="second_fragment_label">Second Fragment</string>-->
+    <!--    <string name="next">Next</string>-->
+    <!--    <string name="previous">Previous</string>-->
+
+
+    <string name="logo_saktoko_flash">Logo Saktoko SplashScreen</string>
+    <string name="beranda">Beranda</string>
+    <string name="pesanan">Pesanan</string>
+    <string name="akun_saya">Akun Saya</string>
+    <string name="icon">Icon</string>
+    <string name="close">Close</string>
+
+    <string name="kesalahan_autentikasi">Kesalahan Autentikasi</string>
+    <string name="tidak_diizinkan_akses">Anda tidak diizinkan untuk mengakses aplikasi ini</string>
+    <string name="akses_ilegal">Akses Ilegal</string>
+    <string name="isi_pesan_ilegal">Anda melakukan tindakan ilegal terhadap aplikasi ini.</string>
+    <string name="kesalahan_data">Kesalahan Data</string>
+    <string name="isi_pesan_kesalahan_data">Sistem mengalami kegagalan pengambilan data.</string>
+    <string name="judul_error_jaringan">Terjadi Kesalahan Jaringan</string>
+    <string name="error_jaringan">Jaringan lemot/terputus, Mohon periksa kembali sambungan internet anda!</string>
+    <string name="login_gagal">Login Gagal</string>
+    <string name="ket_login_gagal">No Hp dan Password Salah. Mohon periksa kembali inputan anda!</string>
+    <string name="akun_tidak_dikenali">No HP Tidak Dikenali</string>
+    <string name="ket_tidak_dikenali">Akun yang anda masukkan tidak memilik hak akses aplikasi ini. Silahkan hubungi admin untuk informasi lebih lanjut!.</string>
+
+    <string name="sudah_terdaftar">No HP Sudah Terdaftar</string>
+    <string name="info_sudah_terdaftar">No HP yang anda masukkan sudah terdaftar di sistem kami. Silahkan login melalui form login!</string>
+    <string name="kami_telah_mengirim">Kami telah mengirimkan kode OTP melalui SMS ke nomor :</string>
+    <string name="masukkan_kode">Masukkan Kode OTP</string>
+    <string name="verifikasi">Verifikasi</string>
+    <string name="kirim_ulang">Kirim Ulang OTP</string>
+    <string name="verifikasinomorHP">Verifikasi Nomor HP</string>
+    <string name="nol">0</string>
+    <string name="verifikasi_gagal">Verifikasi Gagal!</string>
+    <string name="info_verifikasi_gagal">Anda telah melakukan verifikasi berulang-ulang dengan nomer yang sama. Cobalah beberapa saat lagi!</string>
+    <string name="masukkan_kode_otp">Masukkan Kode OTP</string>
+    <string name="password">Password</string>
+    <string name="menunggu_sambungan_ke_server">Menunggu Sambungan</string>
+    <string name="sambung_ulang">Sambung Ulang</string>
+    <string name="menggunakan_wifi">Menggunakan Jaringan WIFI</string>
+    <string name="paket_data">Menggunakan Paket Data</string>
+    <string name="tidak_tersambung_internet">Tidak Tersambung Internet</string>
+    <string name="produk">Produk</string>
+    <string name="banner">Banner</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="deskripsi_saktoko">Aplikasi belanja murah dan mudah. untuk memenuhi kebutuhan harian anda.</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="silahkan_login_atau_register">Silahkan login untuk mulai berbelanja. atau Registrasi jika anda belum memiliki akun.</string>
+    <string name="silahkanmasukkannohp">Silahkan masukkan No. HP anda!</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="nomor_hp">No. HP</string>
+    <string name="silahkanmasukkannamalengkap">Silahkan masukkan nama lengkap anda!</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="lengkapi_data">Lengkapi data dibawah ini:</string>
+    <string name="silahkan_masukkan_no_terdaftar">Silahkan masukkan No. HP yang terdaftar!</string>
+    <string name="contoh_no_hp">[contoh:081234567890]</string>
+    <string name="judul_hp_sudah_ada">No. HP Telah Terdaftar</string>
+    <string name="pesan_hp_ada">No. HP sudah digunakan. Silahkan ke halaman login untuk melanjutkan.</string>
+    <string name="pesan_verifikasi_gagal">Anda telah melakukan verifikasi berulang-ulang dengan nomer yang sama. Cobalah beberapa saat lagi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cari_produk">Cari Produk</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="kategori">Kategori</string>
+    <string name="kategori_produk">Kategori Produk</string>
+    <string name="aneka_resep">Aneka Resep</string>
+    <string name="aneka_resep_terbaru">Aneka Resep Terbaru</string>
+    <string name="foto_produk">Foto Produk</string>
+    <string name="contoh_rupiah">1.000</string>
+    <string name="beli">Beli</string>
+    <string name="produk_terbaru">Produk Terbaru</string>
+</resources>

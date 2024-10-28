@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_2sdp"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="1dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/btnDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.3"
+            app:mrl_rippleBackground="@color/putih"
+            app:mrl_rippleColor="@color/abu_abu_light"
+            app:mrl_rippleDuration="250"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleRoundedCorners="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/imFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/foto_produk"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_no_foto"
+                    app:sriv_left_bottom_corner_radius="0dp"
+                    app:sriv_left_top_corner_radius="9dp"
+                    app:sriv_right_bottom_corner_radius="0dp"
+                    app:sriv_right_top_corner_radius="9dp" />
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/imFoto"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tvKategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothic_italic"
+                        android:text="@string/app_name"
+                        android:textColor="@color/abu_abu_mid"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tvNamaBarang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/gothic_regular"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="@string/app_name"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tvHarga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gothic_bold"
+                            android:text="@string/contoh_rupiah"
+                            android:textColor="@color/jingga"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvHargaAsli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@id/tvHarga"
+                            android:fontFamily="@font/gothic_italic"
+                            android:text="@string/contoh_rupiah"
+                            android:textColor="@color/abu_abu_mid"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/gothic_italic"
+                        android:textColor="@color/abu_abu"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/llbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn_kurang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_putih_border"
+                app:mrl_rippleAlpha="0.5"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+                <ImageView
+                    android:contentDescription="@string/icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_minus"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlJumlah"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/putih">
+
+                <TextView
+                    android:id="@+id/tvJumlah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/gothic_regular"
+                    android:text="@string/nol"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn_tambah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_putih_border"
+                app:mrl_rippleAlpha="0.5"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+                <ImageView
+                    android:contentDescription="@string/icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_minus"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+
+            android:id="@+id/llbtnBeli"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:baselineAligned="false">
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_weight="3"
+                android:id="@+id/btn_beli"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/abu_abu_light"
+                android:background="@drawable/bg_gradient_putih"
+                app:mrl_rippleDuration="50"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="0dp">
+                <TextView
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/gothic_bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/beli"
+                    android:textColor="@color/abu_abu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
