@@ -72,6 +72,16 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+
+    <string name="kategori">Kategori</string>
+    <string name="kategori_produk">Kategori Produk</string>
+    <string name="aneka_resep">Aneka Resep</string>
+    <string name="aneka_resep_terbaru">Aneka Resep Terbaru</string>
+    <string name="foto_produk">Foto Produk</string>
+    <string name="contoh_rupiah">1.000</string>
+    <string name="beli">Beli</string>
+    <string name="produk_terbaru">Produk Terbaru</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -108,12 +118,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <string name="kategori">Kategori</string>
-    <string name="kategori_produk">Kategori Produk</string>
-    <string name="aneka_resep">Aneka Resep</string>
-    <string name="aneka_resep_terbaru">Aneka Resep Terbaru</string>
-    <string name="foto_produk">Foto Produk</string>
-    <string name="contoh_rupiah">1.000</string>
-    <string name="beli">Beli</string>
-    <string name="produk_terbaru">Produk Terbaru</string>
+    <string name="error_no_hp_empty">Silakan masukkan nomor HP</string>
+    <string name="error_server">Terjadi kesalahan di server</string>
+    <string name="login_success">Login berhasil</string>
+    <string name="error_no_user_data">Data pengguna kosong</string>
+    <string name="error_invalid_response">Data tidak valid dari server</string>
+    <string name="error_connection">Koneksi gagal:</string>
 </resources>

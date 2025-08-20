@@ -10,8 +10,12 @@ public class MResep {
     @SerializedName("foto_menu")
     String foto_menu;
 
-    public MResep() {
+    public MResep(String id_resep, String nama_menu, String foto_menu) {
+        this.id_resep = id_resep;
+        this.nama_menu = nama_menu;
+        this.foto_menu = foto_menu;
     }
+
 
     public String getId_resep() {
         return id_resep;

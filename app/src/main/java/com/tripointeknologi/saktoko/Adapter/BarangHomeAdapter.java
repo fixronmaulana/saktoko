@@ -41,7 +41,6 @@ public class BarangHomeAdapter extends RecyclerView.Adapter<BarangHomeAdapter.Ho
     public BarangHomeAdapter(List<MBarang> list) {
         this.list = list;
     }
-
     @NonNull
     @Override
     public BarangHomeAdapter.Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

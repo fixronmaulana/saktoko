@@ -37,7 +37,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SplasScreenActivity extends AppCompatActivity implements Pesan.ClosePesan {
+public class SplashScreenActivity extends AppCompatActivity implements Pesan.ClosePesan {
     ActivitySplasScreenBinding b;
     Context ctx;
     GetData data;

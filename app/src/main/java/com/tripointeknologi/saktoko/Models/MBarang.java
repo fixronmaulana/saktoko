@@ -1,20 +1,27 @@
 package com.tripointeknologi.saktoko.Models;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
 public class MBarang {
     @SerializedName("id_barang")
     String id_barang;
+
     @SerializedName("nama_barang")
     String nama_barang;
+
     @SerializedName("foto")
     String foto;
+
     @SerializedName("berat")
     int berat;
+
     @SerializedName("kategori")
     String kategori;
+
     @SerializedName("satuan")
     String satuan;
+
     @SerializedName("harga")
     int harga;
 
@@ -26,8 +33,9 @@ public class MBarang {
 
     @SerializedName("total")
     int total;
+
     @SerializedName("diskon")
-    int diskon;
+    List<MDiskon> diskon; // <-- Ubah dari int ke List<MDiskon>
 
     public MBarang() {
     }
@@ -72,8 +80,6 @@ public class MBarang {
         this.kategori = kategori;
     }
 
-
-
     public int getHarga() {
         return harga;
     }
@@ -114,11 +120,11 @@ public class MBarang {
         this.total = total;
     }
 
-    public int getDiskon() {
+    public List<MDiskon> getDiskon() {
         return diskon;
     }
 
-    public void setDiskon(int diskon) {
+    public void setDiskon(List<MDiskon> diskon) {
         this.diskon = diskon;
     }
 }

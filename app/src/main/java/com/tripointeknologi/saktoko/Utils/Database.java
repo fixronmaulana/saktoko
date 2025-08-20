@@ -166,7 +166,7 @@ public class Database extends SQLiteOpenHelper {
                 data.setStok(cursor.getInt(cursor.getColumnIndex(C_8)));
                 data.setQty(cursor.getInt(cursor.getColumnIndex(C_9)));
                 data.setTotal(cursor.getInt(cursor.getColumnIndex(C_10)));
-                data.setDiskon(cursor.getInt(cursor.getColumnIndex(C_11)));
+//                data.setDiskon(cursor.getInt(cursor.getColumnIndex(C_11)));
 
                 isiList.add(data);
 
