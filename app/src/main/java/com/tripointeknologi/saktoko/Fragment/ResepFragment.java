@@ -52,7 +52,7 @@ public class ResepFragment extends Fragment {
         String baseUrl = "https://saktoko.com/upload/foto_menu/";
 
         String[][] data = {
-                {"1", "Nasi Goreng", "23251003202430.png"},
+                {"1", "Nasi Gorenggg", "23251003202430.png"},
                 {"2", "Mie Ayam", "23251003202419.png"},
                 {"3", "Bakso Spesial", "23251003202419.png"},
                 {"4", "Soto Ayam", "23251003202419.png"},
