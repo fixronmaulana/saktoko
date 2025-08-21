@@ -17,6 +17,7 @@ import com.android.volley.toolbox.Volley;
 import com.balysv.materialripple.MaterialRippleLayout;
 import com.tripointeknologi.saktoko.R;
 import com.tripointeknologi.saktoko.Utils.SessionApp;
+import com.tripointeknologi.saktoko.Utils.NukeSSLCerts; // ✅ tambahkan import
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -40,6 +41,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        // ✅ bypass SSL handshake untuk development
+        NukeSSLCerts.nuke();
 
         etNoHP = findViewById(R.id.etNoHP);
         tverrorHP = findViewById(R.id.tverrorHP);
@@ -105,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                 error -> {
                     loading.setVisibility(android.view.View.GONE);
                     Log.e(TAG, "Volley error: ", error);
-                    Toast.makeText(this, getString(R.string.error_connection) + " " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Volley error: " + error.toString(), Toast.LENGTH_SHORT).show();
                 }) {
             @Override
             protected Map<String, String> getParams() {
@@ -113,6 +117,7 @@ public class LoginActivity extends AppCompatActivity {
                 params.put("no_hp", noHp);
                 params.put("paket", PAKET);
                 params.put("q", Q_KEY);
+                Log.d(TAG, "Sending params: " + params.toString()); // ✅ debug
                 return params;
             }
         };
