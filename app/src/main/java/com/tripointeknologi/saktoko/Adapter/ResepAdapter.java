@@ -1,6 +1,7 @@
 package com.tripointeknologi.saktoko.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.tripointeknologi.saktoko.Activity.DetailActivity;
 import com.tripointeknologi.saktoko.Models.MResep;
 import com.tripointeknologi.saktoko.R;
 
@@ -37,20 +39,26 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.Holder> {
     public void onBindViewHolder(@NonNull Holder h, int position) {
         MResep item = list.get(position);
 
-        // Set nama menu
+        // Set nama, kategori, deskripsi
         h.tvNamaMenu.setText(item.getNama_menu());
+        h.tvKategori.setText(item.getKategori());
+        h.tvDeskripsi.setText(item.getDeskripsi());
 
         // Load gambar pakai Glide
         Glide.with(ctx)
                 .load(item.getFoto_menu())
-                .placeholder(R.drawable.ic_launcher_background) // gambar default jika error
-                .error(R.drawable.ic_launcher_background)       // gambar default jika gagal load
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.ic_launcher_background)
                 .into(h.imgMenu);
 
-        // Kalau mau klik listener
+        // Klik listener -> kirim data ke DetailActivity
         h.itemView.setOnClickListener(v -> {
-            // Contoh Toast, bisa diarahkan ke DetailActivity
-            // Toast.makeText(ctx, "Klik: " + item.getNamaMenu(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(ctx, DetailActivity.class);
+            intent.putExtra("nama_menu", item.getNama_menu());
+            intent.putExtra("kategori", item.getKategori());
+            intent.putExtra("deskripsi", item.getDeskripsi());
+            intent.putExtra("foto_menu", item.getFoto_menu());
+            ctx.startActivity(intent);
         });
     }
 
@@ -60,12 +68,14 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.Holder> {
     }
 
     public static class Holder extends RecyclerView.ViewHolder {
-        TextView tvNamaMenu;
+        TextView tvNamaMenu, tvKategori, tvDeskripsi;
         ImageView imgMenu;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
             tvNamaMenu = itemView.findViewById(R.id.tvNamaMenu);
+            tvKategori = itemView.findViewById(R.id.txtKategori);
+            tvDeskripsi = itemView.findViewById(R.id.txtDeskripsi);
             imgMenu = itemView.findViewById(R.id.imFoto);
         }
     }
