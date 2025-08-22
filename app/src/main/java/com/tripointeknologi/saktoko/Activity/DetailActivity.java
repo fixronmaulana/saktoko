@@ -1,26 +1,45 @@
 package com.tripointeknologi.saktoko.Activity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.bumptech.glide.Glide;
 import com.tripointeknologi.saktoko.R;
 
 public class DetailActivity extends AppCompatActivity {
 
+    TextView tvNama, tvKategori, tvDeskripsi;
+    ImageView imgMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_detail);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        // Inisialisasi view
+        tvNama = findViewById(R.id.tvDetailNama);
+        tvKategori = findViewById(R.id.tvDetailKategori);
+        tvDeskripsi = findViewById(R.id.tvDetailDeskripsi);
+        imgMenu = findViewById(R.id.imgDetailMenu);
+
+        // Ambil data dari Intent
+        String nama = getIntent().getStringExtra("nama_menu");
+        String kategori = getIntent().getStringExtra("kategori");
+        String deskripsi = getIntent().getStringExtra("deskripsi");
+        String foto = getIntent().getStringExtra("foto_menu");
+
+        // Set ke view
+        tvNama.setText(nama);
+        tvKategori.setText(kategori);
+        tvDeskripsi.setText(deskripsi);
+
+        Glide.with(this)
+                .load(foto)
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.ic_launcher_background)
+                .into(imgMenu);
     }
 }
