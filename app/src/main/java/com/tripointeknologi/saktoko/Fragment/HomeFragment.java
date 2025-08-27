@@ -146,7 +146,7 @@ public class HomeFragment extends Fragment implements Pesan.ClosePesan, SwipeRef
                         Gson gResep = new Gson();
                         Type tResep = new TypeToken<List<MResep>>() {}.getType();
                         listResep = gResep.fromJson(resep, tResep);
-//                        resepAdapter = new ResepAdapter(ctx, listResep);
+                       resepAdapter = new ResepAdapter(ctx, listResep);
                         b.rvResep.setAdapter(resepAdapter);
 
                         Gson gBarang = new Gson();

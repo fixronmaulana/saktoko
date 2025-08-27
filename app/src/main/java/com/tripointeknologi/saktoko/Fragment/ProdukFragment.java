@@ -49,7 +49,7 @@ public class ProdukFragment extends Fragment {
 
         MBarang p2 = new MBarang();
         p2.setId_barang("2");
-        p2.setNama_barang("Tas Ransel");
+        p2.setNama_barang("Tas Ransell");
         p2.setHarga(150000);
         p2.setKategori("Aksesoris");
         p2.setStok(5);
